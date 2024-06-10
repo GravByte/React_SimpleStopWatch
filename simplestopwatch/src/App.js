@@ -32,11 +32,17 @@ function App() {
     const getMinutes = Math.floor((timer / (1000 * 60)) % 60);
     const getSeconds = Math.floor((timer / 1000) % 60);
     const getMilliseconds = Math.floor(timer % 1000);
+
+    // If the timer hits 60 minutes, reset the stopwatch
+    if (getMinutes >= 60) {
+      onReset();
+      return '00:00:00';
+    }
   
     // Pad the minutes, seconds and milliseconds with zeros on the left if necessary
     const paddedMinutes = String(getMinutes).padStart(2, '0');
     const paddedSeconds = String(getSeconds).padStart(2, '0');
-    const paddedMilliseconds = String(getMilliseconds).padStart(3, '0');
+    const paddedMilliseconds = String(getMilliseconds).padStart(2, '0');
   
     // Slice the string to get only the first two digits
     const twoDecimalMilliseconds = paddedMilliseconds.slice(0, 2);
@@ -47,6 +53,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+
+      <h1>Simple Stopwatch</h1>
+
       <div className="timer">{formatTime()}</div>
 
         {!isOn && (
