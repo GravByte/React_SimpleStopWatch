@@ -18,11 +18,21 @@
 }
 
 .button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-style: oblique;
   font-size: 50px;
   padding: 20px;
   margin: 10px;
+  background-color: lightseagreen;
+  color: purple;
+}
+.button:disabled {
+  background-color: lightblue;
 }
 
 .timer {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 80px;
+  color: white;
 }
