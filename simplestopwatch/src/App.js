@@ -27,21 +27,21 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      {timer}
+      <div className="timer">{timer}</div>
 
         {!isOn && (
-        <button type="button" onClick={() => setIsOn(true)}>
+        <button type="button" onClick={() => setIsOn(true)} className="button">
           Start
         </button>
       )}
 
       {isOn && (
-        <button type="button" onClick={() => setIsOn(false)}>
+        <button type="button" onClick={() => setIsOn(false)} className="button">
           Stop
         </button>
       )} 
 
-      <button type="button" disabled={timer === 0} onClick={onReset}>
+      <button type="button" disabled={timer === 0} onClick={onReset} className="button">
         Reset
       </button>
 
