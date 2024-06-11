@@ -45,7 +45,7 @@ function App() {
       setStartTime(Date.now() - elapsedTime);
       interval = setInterval(
         () => setElapsedTime(Date.now() - startTime),
-        1,
+        100,
       );
     } else {
       clearInterval(interval);
