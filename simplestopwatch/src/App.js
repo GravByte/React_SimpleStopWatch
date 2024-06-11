@@ -57,7 +57,7 @@ function App() {
         Reset
       </button>
 
-      <p>Set an end time:</p>
+      <p>(optional) Set an end time:</p>
 
       <div className="input-container">
       <input 
