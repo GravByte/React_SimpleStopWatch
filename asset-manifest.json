@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/React_SimpleStopWatch/static/css/main.1ef18d66.css",
+    "main.js": "/React_SimpleStopWatch/static/js/main.317525cc.js",
+    "static/js/453.2c6d8877.chunk.js": "/React_SimpleStopWatch/static/js/453.2c6d8877.chunk.js",
+    "index.html": "/React_SimpleStopWatch/index.html",
+    "main.1ef18d66.css.map": "/React_SimpleStopWatch/static/css/main.1ef18d66.css.map",
+    "main.317525cc.js.map": "/React_SimpleStopWatch/static/js/main.317525cc.js.map",
+    "453.2c6d8877.chunk.js.map": "/React_SimpleStopWatch/static/js/453.2c6d8877.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1ef18d66.css",
+    "static/js/main.317525cc.js"
+  ]
+}
