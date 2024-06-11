@@ -30,7 +30,11 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header"> <h1>Simple Stopwatch</h1>
+      
+      <header className="App-header"> 
+      <h1>Simple Stopwatch</h1>
+      </header>
+
       <paragraph className="app-paragraph">
       <h2>Instructions:</h2>
       <p>Click Start to begin the stopwatch.</p>
@@ -79,8 +83,6 @@ function App() {
         className="input-box"
       />
       </div>
-
-      </header>
     </div>
   );
 }

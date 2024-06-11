@@ -3,13 +3,76 @@
   background-color: #282c34;
 }
 
+
+/* Styles for screens larger than 480px */
+@media only screen and (min-width: 480px) {
+  .App-header {
+    font-size: 30px;
+  }
+  .app-paragraph {
+    font-size: 20px;
+  }
+  .button {
+    font-size: 70px;
+  }
+  .input-box {
+    width: 200px;
+    height: 50px;
+    font-size: 34px;
+  }
+  .timer {
+    font-size: 80px;
+  }
+}
+
+/* Styles for screens smaller than or equal to 480px */
+@media only screen and (max-width: 480px) {
+  .App-header {
+    font-size: 15px;
+  }
+  .app-paragraph {
+    font-size: 15px;
+  }
+  .button {
+    font-size: 30px;
+  }
+  .input-box {
+    width: 80px;
+    height: 20px;
+    font-size: 18px;
+  }
+  .timer {
+    font-size: 50px;
+  }
+}
+
+/* Styles for screens smaller than or equal to 350px */
+@media only screen and (max-width: 350px) {
+  .App-header {
+    font-size: 15px;
+  }
+  .app-paragraph {
+    font-size: 15px;
+  }
+  .button {
+    font-size: 20px;
+  }
+  .input-box {
+    width: 60px;
+    height: 15px;
+    font-size: 14px;
+  }
+  .timer {
+    font-size: 40px;
+  }
+}
+
 .App-header {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(20px + 1vmin);
   color: rgb(0, 255, 221);
 }
 
@@ -19,7 +82,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(5px + 1vmin);
   color: rgb(255, 255, 255);
   border: 2px solid lightseagreen;
   padding: 20px;
@@ -37,7 +99,6 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   font-style: oblique;
-  font-size: 50px;
   background-color: lightseagreen;
   color: white;
 }
@@ -46,14 +107,11 @@
 }
 
 .input-box {
-  width: 100px;
-  height: 30px;
   margin: 10px;
   padding: 5px;
   font-family: "Orbitron", sans-serif;
   font-weight: bold;
   font-style: oblique;
-  font-size: 24px;
   border-radius: 5px;
   border: 1px solid grey;
   background-color: rgb(13, 82, 99);
@@ -65,7 +123,6 @@
   font-style: normal;
   font-optical-sizing: auto;
   font-weight: 100;
-  font-size: 80px;
   color: white;
   padding: 50px;
 }
