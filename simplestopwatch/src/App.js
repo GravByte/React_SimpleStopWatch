@@ -36,7 +36,7 @@ function App() {
     // If the timer hits 60 minutes, reset the stopwatch
     if (getMinutes >= 60) {
       onReset();
-      return '00:00:00';
+      return '00:00.00';
     }
   
     // Pad the minutes, seconds and milliseconds with zeros on the left if necessary
@@ -47,14 +47,18 @@ function App() {
     // Slice the string to get only the first two digits
     const twoDecimalMilliseconds = paddedMilliseconds.slice(0, 2);
   
-    return `${paddedMinutes}:${paddedSeconds}:${twoDecimalMilliseconds}`;
+    return `${paddedMinutes}:${paddedSeconds}.${twoDecimalMilliseconds}`;
   }
 
   return (
     <div className="App">
-      <header className="App-header">
-
-      <h1>Simple Stopwatch</h1>
+      <header className="App-header"> <h1>Simple Stopwatch</h1>
+      <paragraph className="app-paragraph">
+      <p>Click Start to begin the stopwatch.</p>
+      <p>Click Stop to pause the stopwatch.</p>
+      <p>Click Reset to stop & return the stopwatch to 00:00.00.</p>
+      <p>The stopwatch auto resets once an hour has passed.</p>
+      </paragraph>
 
       <div className="timer">{formatTime()}</div>
 
