@@ -6,11 +6,27 @@ function App() {
   const [isOn, setIsOn] = React.useState(false);
   const [startTime, setStartTime] = React.useState(0);
   const [elapsedTime, setElapsedTime] = React.useState(0);
-  const [userInput, setUserInput] = React.useState();
+  const [userInputMins, setUserInputMins] = React.useState();
+  const [userInputSeconds, setUserInputSeconds] = React.useState();
+  const userInputTotalSeconds = (userInputMins || 0) * 60 + (userInputSeconds || 0);
+  const elapsedSeconds = Math.floor(elapsedTime / 1000);
 
   // Timer user input limit
+  // Minutes
   const handleInputChange = (event) => {
-    setUserInput(parseInt(event.target.value, 10));
+    let value = parseInt(event.target.value, 10);
+    if (value > 59) {
+      value = 59;
+    }
+    setUserInputMins(value ? value : null);
+  };
+  // Seconds
+  const handleInputChangeSeconds = (event) => {
+    let value = parseInt(event.target.value, 10);
+    if (value > 59) {
+      value = 59;
+    }
+    setUserInputSeconds(value ? value : null);
   };
 
   // Logic for resetting the stopwatch
@@ -57,7 +73,7 @@ function App() {
     }
     
     // If the user enters a time, stop the stopwatch when the time is reached
-    if (userInput > 0 && getMinutes >= userInput) {
+    if (userInputTotalSeconds > 0 && elapsedSeconds >= userInputTotalSeconds) {
       return handleStopwatchReset();
     }
 
@@ -80,7 +96,7 @@ function App() {
       <p>Click Start to begin the stopwatch.</p>
       <p>Click Stop to pause the stopwatch.</p>
       <p>Click Reset to stop & return the stopwatch to 00:00.00.</p>
-      <p>The stopwatch auto resets once an hour has passed.</p>
+      <p>The stopwatch auto resets once time specified has passed or otherwise 60 minutes if specified time is null/0.</p>
       </paragraph>
 
       <div className="timer">{formatTime()}</div>
@@ -101,17 +117,28 @@ function App() {
         Reset
       </button>
 
-      <p>Set an end time in minutes:</p>
+      <p>Set an end time:</p>
 
+      <div className="input-container">
       <input 
         type="number" 
         min="0"
-        max="60"
-        value={userInput} 
+        max="59"
+        value={userInputMins} 
         onChange={handleInputChange} 
         placeholder="Mins"
         className="input-box"
       />
+      <input 
+        type="number" 
+        min="0"
+        max="59"
+        value={userInputSeconds} 
+        onChange={handleInputChangeSeconds} 
+        placeholder="Secs"
+        className="input-box"
+      />
+      </div>
 
       </header>
     </div>
