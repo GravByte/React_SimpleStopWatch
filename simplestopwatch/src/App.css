@@ -42,7 +42,7 @@
   color: white;
 }
 .button:disabled {
-  background-color: lightblue;
+  background-color:rgb(13, 82, 99);
 }
 
 .input-box {
@@ -56,8 +56,8 @@
   font-size: 24px;
   border-radius: 5px;
   border: 1px solid grey;
-  background-color: lightblue;
-  color: black;
+  background-color: rgb(13, 82, 99);
+  color: white;
 }
 
 .timer {
