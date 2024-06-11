@@ -28,17 +28,32 @@
 }
 
 .button {
+  padding: 20px;
+  margin: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   font-style: oblique;
   font-size: 50px;
-  padding: 20px;
-  margin: 10px;
   background-color: lightseagreen;
   color: purple;
 }
 .button:disabled {
   background-color: lightblue;
+}
+
+.input-box {
+  width: 100px;
+  height: 30px;
+  margin: 10px;
+  padding: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-style: oblique;
+  font-size: 24px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  background-color: lightblue;
+  color: purple;
 }
 
 .timer {
