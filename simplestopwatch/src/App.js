@@ -61,7 +61,9 @@ function App() {
         Reset
       </button>
 
+      <paragraph className="app-paragraph">
       <p>(optional) Set an end time:</p>
+      </paragraph>
 
       <div className="input-container">
       <input 
