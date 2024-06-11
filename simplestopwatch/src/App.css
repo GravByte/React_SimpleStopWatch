@@ -32,12 +32,14 @@
 .button {
   padding: 20px;
   margin: 10px;
+  border: 0px solid white;
+  border-radius: 32px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   font-style: oblique;
   font-size: 50px;
   background-color: lightseagreen;
-  color: purple;
+  color: white;
 }
 .button:disabled {
   background-color: lightblue;
@@ -55,7 +57,7 @@
   border-radius: 5px;
   border: 1px solid grey;
   background-color: lightblue;
-  color: purple;
+  color: black;
 }
 
 .timer {
