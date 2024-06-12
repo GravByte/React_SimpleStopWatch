@@ -1,21 +1,18 @@
-html, body {
-  height: 100%;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 .App {
   text-align: center;
-  background-color: #282c34;
-  min-height: 100%;
-  box-sizing: border-box;
+  max-width: 960px;
+  margin-inline: auto;
+}
+
+:root {
+  background-color: #1b1e24;
 }
 
 
 /* Styles for screens larger than 480px */
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 481px) {
   .App-header {
-    font-size: 40px;
+    font-size: 30px;
   }
   .app-paragraph {
     font-size: 30px;
@@ -36,7 +33,7 @@ html, body {
 /* Styles for screens smaller than or equal to 480px */
 @media only screen and (max-width: 480px) {
   .App-header {
-    font-size: 25px;
+    font-size: 20px;
   }
   .app-paragraph {
     font-size: 20px;
@@ -60,10 +57,10 @@ html, body {
     font-size: 15px;
   }
   .app-paragraph {
-    font-size: 20px;
+    font-size: 15px;
   }
   .button {
-    font-size: 20px;
+    font-size: 15px;
   }
   .input-box {
     width: 60px;
@@ -71,7 +68,7 @@ html, body {
     font-size: 14px;
   }
   .timer {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 
@@ -116,7 +113,6 @@ html, body {
 
 .input-box {
   margin: 10px;
-  padding: 5px;
   font-family: "Orbitron", sans-serif;
   font-weight: bold;
   font-style: oblique;
@@ -129,8 +125,7 @@ html, body {
 .timer {
   font-family: "Orbitron", sans-serif;
   font-style: normal;
-  font-optical-sizing: auto;
   font-weight: 100;
   color: white;
-  padding: 50px;
+
 }
