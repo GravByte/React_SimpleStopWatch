@@ -35,7 +35,7 @@ function App() {
       <h1>Simple Stopwatch</h1>
       </header>
 
-      <paragraph className="app-paragraph">
+      <paragraph className="instructions">
       <h2>Instructions:</h2>
       <p>Click Start to begin the stopwatch.</p>
       <p>Click Stop to pause the stopwatch.</p>

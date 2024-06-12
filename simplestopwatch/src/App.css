@@ -15,7 +15,7 @@
     font-size: 30px;
   }
   .app-paragraph {
-    font-size: 30px;
+    font-size: 25px;
   }
   .button {
     font-size: 70px;
@@ -73,7 +73,6 @@
 }
 
 .App-header {
-  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -82,11 +81,16 @@
 }
 
 .app-paragraph{
-  min-height: 1vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  color: rgb(255, 255, 255);
+}
+
+.instructions{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: rgb(255, 255, 255);
   border: 1px solid lightseagreen;
   padding: 10px;
@@ -123,6 +127,7 @@
 }
 
 .timer {
+  padding: 20px;
   font-family: "Orbitron", sans-serif;
   font-style: normal;
   font-weight: 100;
